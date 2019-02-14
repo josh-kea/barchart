@@ -31,11 +31,11 @@ function createBoxes(){
 
     if (fakeArray.length > 40){
         //stop
-        fakeArray.pop();
-        counter--;
+        
+        setTimeout(scrollBoxes, 1000);
 
     } else {
-        setTimeout(createBoxes, 100)
+        setTimeout(createBoxes, 1000)
     }
 }
 
